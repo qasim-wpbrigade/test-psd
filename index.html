@@ -23,14 +23,14 @@
 </head>
 
 <body>
-  <!-- Top bar notification -->
-  <div class="notification-bar">
-    <div class="container">
-      <p>live race stream from gator nationals in sarasota, fl / <a href="#">watch now</a></p>
-    </div>
-    <span class="close-btn"><img src="./img/menu-close-icon.png" alt="close btn"></span>
-  </div>
   <header class="header">
+    <!-- Top bar notification -->
+    <div class="notification-bar" id="notiBar">
+      <div class="container">
+        <p>live race stream from gator nationals in sarasota, fl / <a href="#">watch now</a></p>
+      </div>
+      <span onclick="closenotification()" class="close-btn"><img src="./img/menu-close-icon.png" alt="close btn"></span>
+    </div>
     <div class="top-nav">
       <div class="container">
         <a class="brand-logo" href="/"><img src="./img/logo.png" alt="Brand logo"></a>
@@ -57,16 +57,16 @@
         </form>
       </div>
     </div>
-    <div class="title">
-      <div class="container">
-        <h1>home page</h1>
-        <div class="pb-logo">
-          <p>partnership by</p>
-          <img src="./img/reebok-logo.png" alt="partner logo">
-        </div>
+  </header>
+  <div class="page-title">
+    <div class="container">
+      <h1>home page</h1>
+      <div class="pb-logo">
+        <p>partnership by</p>
+        <img src="./img/reebok-logo.png" alt="partner logo">
       </div>
     </div>
-  </header>
+  </div>
   <div class="here-section">
     <div class="container">
       <div class="slider" id="slider">
@@ -79,7 +79,7 @@
             </p>
           </div>
           <div class="play-box">
-            <img src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
+            <img class="thumbnail" src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
             <a class="play-btn" data-fancybox href="https://www.youtube.com/embed/s9r9HlL-ShM?autoplay=1"><img
                 src="img/play-icon.png" alt=""></a>
           </div>
@@ -93,7 +93,7 @@
             </p>
           </div>
           <div class="play-box">
-            <img src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
+            <img class="thumbnail" src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
             <a class="play-btn" data-fancybox href="https://www.youtube.com/embed/s9r9HlL-ShM?autoplay=1"><img
                 src="img/play-icon.png" alt=""></a>
           </div>
@@ -101,7 +101,7 @@
       </div>
     </div>
     <span class='slide-arrow hprev-arrow'><img src='./img/hero-slider-leftt-arrow.png' alt=''></span>
-      <span class='slide-arrow hnext-arrow'><img src='./img/hero-slider-right-arrow.png' alt=''></span>
+    <span class='slide-arrow hnext-arrow'><img src='./img/hero-slider-right-arrow.png' alt=''></span>
   </div>
   <div class="main-body">
     <div class="container">
@@ -142,7 +142,7 @@
           </div>
         </div>
         <div class="zigzag-section">
-          <img src="img/zig-zag-img-1.png" alt="zigzag img" />
+          <img src="img/zig-zag-img-1.png"  alt="zigzag img" />
           <div class="rs-content">
             <span class="title">2019 national champions crowned at reebok</span>
             <span class="desc">
@@ -152,7 +152,7 @@
           </div>
         </div>
         <div class="zigzag-section">
-          <img src="img/zig-zag-img-2.png" alt="zigzag img" s />
+          <img src="img/zig-zag-img-2.png"  alt="zigzag img" s />
           <div class="rs-content">
             <span class="title">2019 national champions crowned at reebok</span>
             <span class="desc">

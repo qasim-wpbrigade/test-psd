@@ -121,6 +121,7 @@ body {
   background: url("../img/pattern-bg.png"),
     linear-gradient(#07512d 100%, #07512d 100%);
   position: relative;
+  box-shadow: 0px 2px 6px 0px #0000006c;
 }
 .header .main-nav .container {
   display: flex;
@@ -290,16 +291,16 @@ body {
   border: 0;
   outline: none;
   background: #ffffff;
-  opacity: 30%;
+  opacity: 0.1;
   transition: 0.3s all;
 }
 .here-section .slider .slick-dots li button:hover {
   background: #ffffff;
-  opacity: 100%;
+  opacity: 1;
 }
 .here-section .slider .slick-dots li.slick-active button {
   background: #ffffff;
-  opacity: 100%;
+  opacity: 1;
 }
 
 .here-section .slider .slide-item {
@@ -345,7 +346,7 @@ body {
   position: absolute;
   padding: 23px 23px 23px 32px;
   background: #012b1f;
-  opacity: 80%;
+  opacity: 0.8;
   cursor: pointer;
   border-radius: 50px;
   transition: 0.3s all;
@@ -479,16 +480,16 @@ body {
   border: 0;
   outline: none;
   background: #ffffff;
-  opacity: 30%;
+  opacity: 0.3;
   transition: 0.3s all;
 }
 .main-body .left-side .product-slider .slick-dots li button:hover {
   background: #ffffff;
-  opacity: 100%;
+  opacity: 1;
 }
 .main-body .left-side .product-slider .slick-dots li.slick-active button {
   background: #ffffff;
-  opacity: 100%;
+  opacity: 1;
 }
 .main-body .left-side .product-slider .product-item {
   width: 100%;

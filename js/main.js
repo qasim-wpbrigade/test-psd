@@ -43,16 +43,33 @@ $(document).ready(function () {
         breakpoint: 580,
         settings: {
           arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 483,
+        settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   });
-
+  $(document).click((event) => {
+    if (!$(event.target).closest('#toggle-btn, #main-nav').length) {
+      $("#main-nav").removeClass("active");
+    }        
+  });
   $("a.play-btn").fancybox();
 });
 
 function closenotification(){
   document.getElementById('notiBar').style.display = 'none';
+}
+
+function togglenavbar(){
+  var nav = document.getElementById("main-nav");
+   nav.classList.toggle("active");
 }

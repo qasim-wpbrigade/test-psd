@@ -38,7 +38,7 @@ body {
 }
 .notification-bar p a {
   color: #217f40;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 .notification-bar p a:hover {
   text-decoration: none;
@@ -303,7 +303,7 @@ body {
 }
 .here-section .slider .slide-item .content-box {
   width: 50%;
-  padding: 8px 20px 20px 65px;
+  padding: 11px 20px 20px 65px;
 }
 .here-section .slider .slide-item .content-box .h1 {
   font-size: 50px;
@@ -311,12 +311,13 @@ body {
   color: #ffffff;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   letter-spacing: -0.3px;
 }
 .here-section .slider .slide-item .content-box p {
   font-size: 18px;
   color: #ffffff;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.1px;
   line-height: 1.4;
@@ -353,12 +354,16 @@ body {
 }
 .main-body .container {
   display: flex;
-  padding: 80px 0;
-  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  column-gap: 30px;
 }
 .main-body .aside {
-  width: 285px;
-  position: relative;
+  min-width: 255px;
+}
+.main-body .left-side {
+  flex: 1;
+  width: 70%;
 }
 .main-body .aside .events-widget {
   background: url("../img/pattern-bg.png"),
@@ -426,14 +431,8 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-.main-body .left-side {
-  position: relative;
-  width: 75%;
-  padding: 0 15px;
-}
 .main-body .left-side .product-slider .slide-arrow {
   position: absolute;
-  top: 28%;
 }
 .main-body .left-side .product-slider .slide-arrow img {
   height: 25px;
@@ -442,9 +441,11 @@ body {
 .main-body .left-side .product-slider .prev-arrow {
   left: 4px;
   cursor: pointer;
+  top: 31%;
 }
 .main-body .left-side .product-slider .next-arrow {
   right: 4px;
+  top: 29%;
   cursor: pointer;
 }
 .main-body .left-side .product-slider .slick-dots {
@@ -502,7 +503,7 @@ body {
 .main-body .left-side .posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 24px;
+  grid-gap: 29px;
   margin-bottom: 40px;
 }
 .main-body .left-side .posts .post {
@@ -544,9 +545,8 @@ body {
   display: block;
   width: 100%;
   transition: 0.3s all;
-  padding: 8px 0px;
+  padding: 9px 0px;
   margin: 0 auto;
-  letter-spacing: 0.5px;
 }
 .main-body .left-side .posts .post .readmore-btn:hover {
   background: #064426 url("../img/pattern-bg.png");
@@ -575,7 +575,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 42px 5px 32px;
+  padding: 15px 42px 15px 32px;
   justify-content: center;
   color: #ffffff;
 }
@@ -583,7 +583,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .main-body .left-side .zigzag-section .rs-content .desc {
   font-size: 14px;
@@ -592,7 +592,7 @@ body {
 .contact-form {
   background: url("../img/pattern-bg.png"),
     linear-gradient(#07512d 100%, #07512d 100%);
-  padding: 31px 0 43px 0;
+  padding: 31px 0 40px 0;
 }
 .contact-form .container {
   max-width: 570px;
@@ -601,7 +601,7 @@ body {
   color: #ffffff;
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -614,7 +614,7 @@ body {
 .contact-form .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   width: 100%;
 }
 .contact-form .form-group label {
@@ -642,18 +642,20 @@ body {
   border: none;
   text-transform: uppercase;
   outline: none;
-  padding: 10px;
+  padding: 9px;
   font-family: "Roboto", sans-serif;
 }
 .contact-form .form-group .radio-inputs {
-  margin-top: 3px;
+  margin-top: 7px;
   display: block;
 }
 .contact-form .form-group .radio-inputs label {
   font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
-  margin-right: 15px;
+  margin-right: 9px;
+  vertical-align: bottom;
+  font-family: "Roboto", sans-serif;
 }
 .contact-form .form-group .radio-inputs input[type="radio"] {
   cursor: pointer;
@@ -704,7 +706,7 @@ body {
 .footer {
   background: url("../img/pattern-bg.png"),
     linear-gradient(#012b1f 100%, #012b1f 100%);
-  padding: 35px 0;
+  padding: 33px 0;
 }
 .footer .container {
   display: flex;
@@ -753,10 +755,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .footer .social-icons .nav-link {
-  padding: 10px;
+  padding: 10px 10px 10px 11px;
   display: block;
   transition: 0.2s all;
 }

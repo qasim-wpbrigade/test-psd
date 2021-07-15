@@ -801,37 +801,30 @@ body {
 }
 @media (max-width: 1023px) {
   .notification-bar {
-    padding: 15.5px 0 15.5px 0;
+    padding: 15.5px 0 13px 0;
     position: relative;
     background: transparent;
     z-index: 6;
     background: url("../img/pattern-bg.png"),
       linear-gradient(#ffffff 100%, #ffffff 100%);
   }
-  .notification-bar p {
-    font-size: 14px;
-    font-weight: 500;
-    word-spacing: 0.3px;
-  }
-  .notification-bar p a {
-    line-height: 0;
-  }
   .notification-bar .close-btn {
     padding: 6px;
     right: 15px;
   }
   .header .top-nav .brand-logo img {
-    height: 34px;
+    height: 33px;
   }
   .header .top-nav .btns .ac-btn {
-    margin-left: 6;
+    margin-left: 6px;
   }
   .header .main-nav {
     box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.151);
   }
   .header .main-nav a {
-    padding: 18.5px 19px;
+    padding: 18.5px 19.5px;
     font-size: 16px;
+    letter-spacing: 0.1px;
   }
   .header .main-nav .search input {
     padding: 8px 0 8px 16px;
@@ -851,13 +844,13 @@ body {
   }
   .page-title h1 {
     font-size: 40px;
-    letter-spacing: -1.9px;
-    letter-spacing: -1.1px;
+    letter-spacing: -0.6px;
     position: relative;
-    top: -2px;
+    top: -1px;
+    left: -2px;
   }
   .page-title .pb-logo {
-    padding: 18.5px 69px 18.5px 64px;
+    padding: 18.5px 61px 18.5px 66px;
     position: relative;
     left: 3px;
     top: 2px;
@@ -866,26 +859,27 @@ body {
   .page-title .pb-logo p {
     font-size: 14px;
     transform: skewX(19deg);
-    top: -7.5px;
+    top: -8px;
     font-weight: 600;
     letter-spacing: 0.1px;
-    left: -7.5px;
+    left: -12px;
   }
   .page-title .pb-logo img {
-    height: 24px;
+    height: 25px;
     transform: skewX(19deg);
   }
   .here-section .slide-arrow {
     display: none;
   }
   .here-section .slider .slide-item {
-    padding: 31px 0 87px 0;
+    padding: 34px 0 72px 0;
   }
   .here-section .slider .slide-item .content-box {
-    padding: 0;
+    width: 50%;
+    padding: 0px 10px 0px 0px;
   }
   .here-section .slider .slide-item .play-box .thumbnail {
-    max-width: 60%;
+    max-width: 67%;
   }
   .here-section .slider .slide-item .content-box .h1 {
     font-size: 40px;
@@ -897,17 +891,15 @@ body {
   .here-section .slider .slide-item .content-box p {
     font-size: 18px;
     font-weight: 300;
-    letter-spacing: 0.8px;
-    line-height: 1.49;
   }
   .here-section .slider .slide-item .play-box .play-btn img {
     width: 30px;
   }
   .here-section .slider .slide-item .play-box {
-    padding-top: 0px;
+    padding: 8px 35px 26px 40px;
   }
   .here-section .slider .slick-dots {
-    bottom: 19px;
+    bottom: 27px;
   }
   .here-section .slider .slick-dots li button {
     padding: 3.5px 9px;
@@ -936,7 +928,8 @@ body {
   }
   .main-body .left-side .posts {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    grid-gap: 32px;
   }
   .main-body .left-side .posts .post .thumbnail {
     width: 100%;
@@ -959,10 +952,10 @@ body {
     padding: 2px 7px;
   }
   .main-body .left-side .product-slider .slick-dots {
-    top: 31px;
+    top: 34px;
   }
   .main-body .left-side .product-slider {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     padding: 0;
   }
   .main-body .left-side .divider {
@@ -987,6 +980,11 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .notification-bar p {
+    font-size: 12px;
+    text-align: left;
+    padding-right: 20px;
+  }
   .header .top-nav .container {
     flex-direction: column;
     padding: 0;

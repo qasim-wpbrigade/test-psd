@@ -695,8 +695,12 @@ body {
   border: none;
   text-transform: uppercase;
   outline: none;
-  padding: 8px;
+  padding: 10px;
   font-family: "Roboto", sans-serif;
+  appearance: none;
+  background-image: url("../img/dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 96% center;
 }
 .contact-form .form-group .radio-inputs {
   margin-top: 7px;
@@ -1009,6 +1013,14 @@ body {
   .main-body .left-side .zigzag-section .rs-content .desc {
     font-size: 14px;
   }
+  .contact-form .form-group input {
+    color: #222222;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 9px;
+    font-family: "Roboto", sans-serif;
+  }
 }
 @media (max-width: 767px) {
   .notification-bar p {
@@ -1205,12 +1217,27 @@ body {
     grid-gap: 0px;
     width: 100%;
   }
+  .contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .contact-form .form-group input {
+    color: #222222;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+  }
   .contact-form .form-group select {
-    padding: 9px 9px 9px 7px;
+    padding: 10px 9px 9px 9px;
   }
   .contact-form .form-group .radio-inputs {
     margin-top: 10px;
     display: block;
+    margin-bottom: -2px;
   }
   .contact-form .form-group .radio-inputs label {
     margin-right: 8px;

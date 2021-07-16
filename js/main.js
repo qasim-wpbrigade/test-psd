@@ -59,17 +59,22 @@ $(document).ready(function () {
       },
     ],
   });
-  $(document).click((event) => {
-    if (!$(event.target).closest("#toggle-btn, #main-nav").length) {
-      $("#main-nav").removeClass("active");
-      var src =
-        $("#toggleimg").attr("src") === "img/burger-icon.png"
-          ? "img/menu-close-icon.png"
-          : "img/burger-icon.png";
-      $("#toggleimg").attr("src", src);
+  $("a.play-btn").fancybox();
+  $("#search").on("change paste input", function () {
+    let searchvalue = document.getElementById("search").value;
+    if (searchvalue) {
+      $("#search-close").css('display', 'block');
+      $("#search-btn").css('display', 'none');
+    } else {
+      $("#search-close").css('display', 'none');
+      $("#search-btn").css('display', 'block');
     }
   });
-  $("a.play-btn").fancybox();
+  $("#search-close").click(function () {
+    $("#search-close").css('display', 'none');
+    $("#search-btn").css('display', 'block');
+    document.getElementById("search").value = "";
+  })
 });
 
 function closenotification() {
@@ -84,4 +89,5 @@ function togglenavbar() {
       ? "img/menu-close-icon.png"
       : "img/burger-icon.png";
   $("#toggleimg").attr("src", src);
+  $('body').toggleClass("overflowhidden");
 }

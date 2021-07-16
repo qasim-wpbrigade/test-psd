@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Test Psd</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,9 +34,10 @@
     <div class="top-nav">
       <div class="container">
         <div class="left-side">
-        <a class="brand-logo" href="/"><img src="./img/logo.png" alt="Brand logo"></a>
-        <div onclick="togglenavbar()" id="toggle-btn" class="toggle-btn"><img id="toggleimg" src="img/burger-icon.png" alt=""></div>
-      </div>
+          <a class="brand-logo" href="/"><img src="./img/logo.png" alt="Brand logo"></a>
+          <div onclick="togglenavbar()" id="toggle-btn" class="toggle-btn"><img id="toggleimg" src="img/burger-icon.png"
+              alt=""></div>
+        </div>
         <div class="btns">
           <a class="btn" href="#"><span>membership</span></a>
           <a href="#" class="ac-btn btn"><span>account</span></a>
@@ -55,8 +56,9 @@
           </ul>
         </nav>
         <form action="/" class="search">
-          <input type="search" name="search" placeholder="search" id="search">
-          <button type="submit"><img src="./img/search-icon.png" alt="search icon"></button>
+          <input type="text" name="search" placeholder="search" id="search">
+          <span id="search-close"><img src="img/menu-close-icon.png" alt=""></span>
+          <button id="search-btn" type="submit"><img src="./img/search-icon.png" alt="search icon"></button>
         </form>
       </div>
     </div>
@@ -82,7 +84,7 @@
             </p>
           </div>
           <div class="play-box">
-            <img class="thumbnail" src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
+            <img class="thumbnail" src="img/video-thumbnail-img.png" alt="">
             <a class="play-btn" data-fancybox href="https://www.youtube.com/embed/s9r9HlL-ShM?autoplay=1"><img
                 src="img/play-icon.png" alt=""></a>
           </div>
@@ -96,7 +98,7 @@
             </p>
           </div>
           <div class="play-box">
-            <img class="thumbnail" src="img/video-thumbnail-img.png" width="auto" height="auto" alt="">
+            <img class="thumbnail" src="img/video-thumbnail-img.png" alt="">
             <a class="play-btn" data-fancybox href="https://www.youtube.com/embed/s9r9HlL-ShM?autoplay=1"><img
                 src="img/play-icon.png" alt=""></a>
           </div>
@@ -120,7 +122,7 @@
         <div class="divider"></div>
         <div class="posts">
           <div class="post">
-            <div class="thumbnail"><img src="./img/post-img.png" width="100%" height="auto" alt="Post thumbnail"></div>
+            <div class="thumbnail"><img src="./img/post-img.png" alt="Post thumbnail"></div>
             <div class="content">
               <h3 class="title">2019 national champions crowned at reebok</h3>
               <p class="paragraph">Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
@@ -128,7 +130,7 @@
             <a class="readmore-btn" href="#">read more</a>
           </div>
           <div class="post">
-            <div class="thumbnail"><img src="./img/post-img.png" width="100%" height="auto" alt="Post thumbnail"></div>
+            <div class="thumbnail"><img src="./img/post-img.png" alt="Post thumbnail"></div>
             <div class="content">
               <h3 class="title">2019 national champions</h3>
               <p class="paragraph">Membership has its perks</p>
@@ -136,7 +138,7 @@
             <a class="readmore-btn" href="#">read more</a>
           </div>
           <div class="post">
-            <div class="thumbnail"><img src="./img/post-img.png" width="100%" height="auto" alt="Post thumbnail"></div>
+            <div class="thumbnail"><img src="./img/post-img.png" alt="Post thumbnail"></div>
             <div class="content">
               <h3 class="title">2019 national champions crowned at reebok</h3>
               <p class="paragraph">Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
@@ -145,7 +147,7 @@
           </div>
         </div>
         <div class="zigzag-section">
-          <div class="thumbnail"><img src="img/zig-zag-img-1.png" width="auto" height="100%"  alt="zigzag img" /></div>
+          <div class="thumbnail"><img src="img/zig-zag-img-1.png" alt="zigzag img" /></div>
           <div class="rs-content">
             <h2 class="title">2019 national champions crowned at reebok</h2>
             <p class="desc">
@@ -155,7 +157,7 @@
           </div>
         </div>
         <div class="zigzag-section">
-          <div class="thumbnail"><img src="img/zig-zag-img-2.png" width="auto" height="100%"  alt="zigzag img"  /></div>
+          <div class="thumbnail"><img src="img/zig-zag-img-2.png" alt="zigzag img" /></div>
           <div class="rs-content">
             <h2 class="title">2019 national champions crowned at reebok</h2>
             <p class="desc">
@@ -168,30 +170,30 @@
       <div class="aside">
         <div class="events-widget">
           <h3 class="title">events</h3>
-          <ul>
+          <ul class="events">
             <li>
-              <h2 class="numbering">1</h2>
+              <span class="numbering"></span>
               <div class="detail">
                 <h3>show in usa</h3>
                 <p>usa</p>
               </div>
             </li>
             <li>
-              <h2 class="numbering">2</h2>
+              <span class="numbering"></span>
               <div class="detail">
                 <h3>adidas show in usa</h3>
                 <p>usa</p>
               </div>
             </li>
             <li>
-              <h2 class="numbering">3</h2>
+              <span class="numbering"></span>
               <div class="detail">
                 <h3>adidas show </h3>
                 <p>usa</p>
               </div>
             </li>
             <li>
-              <h2 class="numbering">4</h2>
+              <span class="numbering"></span>
               <div class="detail">
                 <h3>adidas in usa</h3>
                 <p>usa</p>
@@ -208,25 +210,25 @@
       <form class="form" action="/">
         <div class="form-inline">
           <div class="form-group">
-            <label for="name">name</label>
-            <input type="name" name="name" id="name" required placeholder="enter name" />
+            <label>name</label>
+            <input type="text" name="uname" id="uname" required placeholder="enter name" />
           </div>
           <div class="form-group">
-            <label for="email">email</label>
+            <label>email</label>
             <input type="email" name="email" id="email" required placeholder="enter email" />
           </div>
         </div>
         <div class="form-inline">
           <div class="form-group">
-            <label for="country">country</label>
+            <label>country</label>
             <select name="country" required id="country">
-              <option value="usa">usa</option>
+              <option value="">usa</option>
               <option value="uk">pakistan</option>
               <option value="uk">uk</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="state">state</label>
+            <label>state</label>
             <select name="state" required id="state">
               <option value="">usa</option>
               <option value="state1">state1</option>
@@ -235,7 +237,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="gender">gender</label>
+          <label>gender</label>
           <div class="radio-inputs">
             <input type="radio" value="male" checked id="male" name="gender" />
             <label for="male">male</label>

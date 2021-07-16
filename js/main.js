@@ -50,7 +50,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 425,
+        breakpoint: 525,
         settings: {
           arrows: false,
           slidesToShow: 1,

@@ -1270,7 +1270,7 @@ body {
     padding: 10px 10px 10px 11px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 525px) {
   .main-body .left-side .product-slider .product-item {
     margin: 0px;
   }

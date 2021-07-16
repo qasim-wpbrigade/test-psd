@@ -1037,24 +1037,33 @@ body {
     display: block;
   }
   .header .main-nav .container {
-    display: block;
     flex-direction: column-reverse;
     justify-content: left;
     align-items: flex-start;
-    padding-top: 15px;
+    padding-top: 10px;
   }
   .header .main-nav .search {
     margin-left: 0;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .header .main-nav .search input {
+    padding: 8px 0 8px 10px;
+  }
+  .header .main-nav .search button {
+    padding-right: 10px;
   }
   .header .main-nav .nav ul {
     flex-direction: column;
     align-items: left;
   }
+  .header .main-nav li{
+    margin-bottom: -2px;
+  }
   .header .main-nav a {
     transform: skewX(0deg);
-    clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+    padding: 19px 26px 20px 20px;
+    clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
   }
   .header .main-nav a span {
     transform: skewX(0deg);

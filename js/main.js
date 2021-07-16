@@ -57,11 +57,7 @@ $(document).ready(function () {
       }
     ]
   });
-  $(document).click((event) => {
-    if (!$(event.target).closest('#toggle-btn, #main-nav').length) {
-      $("#main-nav").removeClass("active");
-    }        
-  });
+
   $("a.play-btn").fancybox();
 });
 

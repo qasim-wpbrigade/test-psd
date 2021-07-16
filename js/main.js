@@ -14,10 +14,10 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   });
   $(".product-slider").slick({
     speed: 300,
@@ -26,8 +26,10 @@ $(document).ready(function () {
     infinite: true,
     arrows: true,
     dots: true,
-    prevArrow: "<span class='slide-arrow prev-arrow'><img src='./img/hero-slider-leftt-arrow.png' alt=''></span>",
-    nextArrow: "<span class='slide-arrow next-arrow'><img src='./img/hero-slider-right-arrow.png' alt=''></span>",
+    prevArrow:
+      "<span class='slide-arrow prev-arrow'><img src='./img/hero-slider-leftt-arrow.png' alt=''></span>",
+    nextArrow:
+      "<span class='slide-arrow next-arrow'><img src='./img/hero-slider-right-arrow.png' alt=''></span>",
     responsive: [
       {
         breakpoint: 1024,
@@ -36,36 +38,40 @@ $(document).ready(function () {
           slidesToScroll: 3,
           infinite: true,
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 580,
         settings: {
           arrows: false,
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
+          slidesToScroll: 2,
+        },
       },
       {
         breakpoint: 483,
         settings: {
           arrows: false,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
-
+  $(document).click((event) => {
+    if (!$(event.target).closest("#toggle-btn, #main-nav").length) {
+      $("#main-nav").removeClass("active");
+    }
+  });
   $("a.play-btn").fancybox();
 });
 
-function closenotification(){
-  document.getElementById('notiBar').style.display = 'none';
+function closenotification() {
+  document.getElementById("notiBar").style.display = "none";
 }
 
-function togglenavbar(){
+function togglenavbar() {
   var nav = document.getElementById("main-nav");
-   nav.classList.toggle("active");
+  nav.classList.toggle("active");
 }

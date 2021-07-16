@@ -42,7 +42,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 580,
+        breakpoint: 767,
         settings: {
           arrows: false,
           slidesToShow: 2,
@@ -50,7 +50,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 483,
+        breakpoint: 425,
         settings: {
           arrows: false,
           slidesToShow: 1,
@@ -62,6 +62,11 @@ $(document).ready(function () {
   $(document).click((event) => {
     if (!$(event.target).closest("#toggle-btn, #main-nav").length) {
       $("#main-nav").removeClass("active");
+      var src =
+        $("#toggleimg").attr("src") === "img/burger-icon.png"
+          ? "img/menu-close-icon.png"
+          : "img/burger-icon.png";
+      $("#toggleimg").attr("src", src);
     }
   });
   $("a.play-btn").fancybox();
@@ -74,4 +79,9 @@ function closenotification() {
 function togglenavbar() {
   var nav = document.getElementById("main-nav");
   nav.classList.toggle("active");
+  var src =
+    $("#toggleimg").attr("src") === "img/burger-icon.png"
+      ? "img/menu-close-icon.png"
+      : "img/burger-icon.png";
+  $("#toggleimg").attr("src", src);
 }

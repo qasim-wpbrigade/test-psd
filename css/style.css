@@ -496,7 +496,7 @@ body {
   height: 100%;
   border: 7px solid rgba(255, 255, 255, 0.068);
 }
-.main-body .left-side .product-slider .product-item:not(:last-of-type) {
+.main-body .left-side .product-slider .product-item{
   margin: 0 20px;
 }
 .main-body .left-side .product-slider {
@@ -1105,26 +1105,43 @@ body {
     bottom: 38px;
   }
   .main-body .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 52px;
     column-gap: 0;
-    row-gap: 40px;
+    row-gap: 50px;
     flex-direction: column;
   }
   .main-body .left-side {
     width: 100%;
   }
-  .main-body .aside {
-    width: 100%;
+  .main-body .left-side .product-slider .product-item{
+    margin: 0px;
   }
-  .contact-form .form-inline {
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
+  .main-body .left-side .product-slider {
+    padding: 0px;
+    margin-bottom: 43px;
   }
-}
-@media (max-width: 483px) {
+  .main-body .left-side .product-slider .slick-dots {
+    top: 14px;
+  }
+  .main-body .left-side .divider {
+    margin-bottom: 30px;
+  }
   .main-body .left-side .posts {
-    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 29px;
+    grid-gap: 20px;
+  }
+  .main-body .left-side .posts .post .content {
+    margin-bottom: 10px;
+  }
+  .main-body .left-side .posts .post .title {
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    padding-right: 30px;
+  }
+  .main-body .left-side .posts .post .readmore-btn {
+    font-size: 20px;
+    padding: 9px 35px 9px 0px;
   }
   .main-body .left-side .zigzag-section {
     flex-direction: column;
@@ -1132,15 +1149,88 @@ body {
   .main-body .left-side .zigzag-section .thumbnail {
     width: 100%;
     clip-path: none;
+    max-height: 202px;
   }
   .main-body .left-side .zigzag-section:nth-child(odd) {
     flex-direction: column;
   }
   .main-body .left-side .zigzag-section:nth-child(odd) .thumbnail {
+    width: 100%;
     clip-path: none;
+    max-height: 200px;
   }
-
+  .main-body .left-side .zigzag-section:nth-child(odd) .rs-content {
+    width: 100%;
+    padding: 14px 12px 16px 11px;
+  }
   .main-body .left-side .zigzag-section .rs-content {
     width: 100%;
+    padding: 15px 12px 15px 11px;
+  }
+  .main-body .aside {
+    width: 100%;
+  }
+  .main-body .aside .events-widget li .detail h3::after {
+    top: 0px;
+  }
+  .main-body .aside .events-widget li .detail p {
+    top: 6px;
+  }
+  .contact-form {
+    padding: 31px 0 40px 0;
+  }
+  .contact-form .container {
+    max-width: 100%;
+  }
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contact-form .form-inline {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    width: 100%;
+  }
+  .contact-form .form-group select {
+    padding: 9px 9px 9px 7px;
+  }
+  .contact-form .form-group .radio-inputs {
+    margin-top: 10px;
+    display: block;
+  }
+  .contact-form .form-group .radio-inputs label {
+    margin-right: 8px;
+    vertical-align: top;
+  }
+  .contact-form .form-group .radio-inputs input[type="radio"] {
+    margin-right: 4px;
+    height: 22px;
+    width: 22px;
+  }
+  .contact-form .form-group textarea {
+    height: 86px;
+  }
+  .contact-form .submit-btn {
+    padding: 7px 60px;
+  }
+  .footer {
+    padding: 35px 0;
+  }
+  .footer .footer-nav li {
+    margin-bottom: 7px;
+  }
+  .footer .footer-nav {
+    margin-bottom: 0px;
+  }
+  .footer .social-icons{
+    margin-bottom: 7px;
+  }
+  .footer .social-icons .nav-link {
+    padding: 10px 10px 10px 11px;
+  }
+}
+@media (max-width: 483px) {
+  .main-body .left-side .posts {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

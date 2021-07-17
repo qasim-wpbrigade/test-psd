@@ -562,6 +562,7 @@ body {
 }
 .main-body .left-side .posts .post .thumbnail img {
   width: 100%;
+  object-fit: cover;
 }
 .main-body .left-side .posts .post .content {
   padding: 13px 11px;
@@ -612,6 +613,7 @@ body {
 .main-body .left-side .zigzag-section .thumbnail img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .main-body .left-side .zigzag-section:nth-child(odd) {
   flex-direction: row-reverse;
